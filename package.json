@@ -1,0 +1,20 @@
+{
+  "name": "2111",
+  "version": "1.0.0",
+  "description": "无",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/russLx/2111.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/russLx/2111/issues"
+  },
+  "homepage": "https://github.com/russLx/2111#readme"
+}
