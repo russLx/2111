@@ -1015,15 +1015,17 @@
     <script src="js/tools.js"></script>
     <script src="js/index.js"></script>
     <script>
-        // lazyLoadInit({
-        //     showTime: 500,
-        //     onLoadBackEnd: function (i, e) {
-        //         console.log("onLoadBackEnd:" + i);
-        //     },
-        //     onLoadBackStart: function (i, e) {
-        //         console.log("onLoadBackStart:" + i);
-        //     }
-        // });
+      var head =document.querySelector('.header');
+      console.log(head);
+    window.onscroll=()=>{
+        if(window.scrollY>40){
+            head.style.position='fixed';
+            head.style.top='0px';
+        }else{
+            head.style.position='';
+        }
+    }
+    
     </script>
 
 </body>
