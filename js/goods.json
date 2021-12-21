@@ -31,7 +31,7 @@
   "del": 2500
 },
 {
-  "product_id": 10000134,
+  "product_id": 10000136,
   "name": "Redmi Note 7 Pro",
   "desc": "索尼4800万超清拍照",
   "image": "./upload/sm/271093cb5862f9b0073b0bf813e04f52.JPG",
@@ -42,7 +42,7 @@
   "product_id": 10000131,
   "name": "Redmi Note 7",
   "desc": "4800万拍照 长续航 ",
-  "image": "./upload/sm/8cb25a30b89e1db8476414a95d27816d.JPG",
+  "image": "./upload/sm/f422d4f9a7ca334cd00bcbea2e48cbc2.JPG",
   "price": 1099,
   "del": 1399
 },

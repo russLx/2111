@@ -11,9 +11,101 @@
     <link rel="shortcut icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/base1.css" />
     <link rel="stylesheet" href="css/cart.css" />
-    <script src="js/require.js" defer async="true" data-main="js/cart.js"></script>
+   
+    <script src="./js/axios.js"></script>
     <style>
-
+     table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+    text-align: center;
+    width: 1226px;
+}
+/* th, td { */
+   
+/* } */
+th {
+    background: #e90a12;
+    border-top: 3px solid #ffa7bd;
+    height: 30px;
+}
+td {
+    padding: 10px;
+    color: #444;
+}
+tbody tr:hover {
+    background: RGB(238,246,255);
+}
+.checkbox {
+    width: 60px;
+}
+.goods {
+    width: 300px;
+}
+.goods span {
+    width: 180px;
+    margin-top: 10px;
+    text-align: left;
+    float: left;
+}
+.price {
+    width: 130px;
+}
+.count {
+    width: 90px;
+}
+.count .add, .count input, .count .reduce {
+    float: left;
+    margin-right: -1px;
+    position: relative;
+    z-index: 0;
+}
+.count .add, .count .reduce {
+    height: 23px;
+    width: 17px;
+    border: 1px solid #e5e5e5;
+    background: #f0f0f0;
+    text-align: center;
+    line-height: 23px;
+    color: #444;
+}
+.count .add:hover, .count .reduce:hover {
+    color: #f50;
+    z-index: 3;
+    border-color: #f60;
+    cursor: pointer;
+}
+.count input {
+    width: 50px;
+    height: 15px;
+    line-height: 15px;
+    border: 1px solid #aaa;
+    color: #343434;
+    text-align: center;
+    padding: 4px 0;
+    background-color: #fff;
+    z-index: 2;
+}
+.subtotal {
+    width: 64px;
+    color: red;
+    font-weight: bold;
+}
+.operation {
+    width: 80px;
+}
+.operation span:hover, a:hover {
+    cursor: pointer;
+    color: red;
+    text-decoration: underline;
+}
+img {
+    width: 100px;
+    height: 80px;
+    /*border: 1px solid #ccc;*/
+    margin-right: 10px;
+    float: left;
+}
     </style>
 </head>
 
@@ -43,11 +135,13 @@
                 <a href="#" class="btn btn-primary btn-login" id="J_loginBtn" data-href="//order.mi.com/site/login?redirectUrl=https://static.mi.com/cart/" data-stat-id="2708415ff4adafd3" onclick="_msq.push(['trackEvent', '5df97b551662ffe7-2708415ff4adafd3', 'javascript:void0', 'pcpid', '']);">立即登录</a>
                 <a href="#" class="btn btn-primary btn-shoping J_goShoping" data-stat-id="498eb13e3ab3f287" onclick="_msq.push(['trackEvent', '5df97b551662ffe7-498eb13e3ab3f287', '//list.mi.com/0', 'pcpid', '']);">马上去购物</a>
             </div>
+
             <div id="J_cartBox">
                 <div class="cart-goods-list">
                     <!-- 列表头 -->
                     <div class="list-head clearfix">
-                        <div class="col col-check"><i class="iconfont icon-checkbox icon-checkbox-selected" id="J_selectAll">√</i>全选</div>
+                        <div class="col col-check"><i class="iconfont icon-checkbox icon-checkbox-selected" id="J_selectAll">   <label>
+                            <input class="check-all check" type="checkbox" /></label></i>&nbsp;&nbsp;全选</div>
                         <div class="col col-img">&nbsp;</div>
                         <div class="col col-name">商品名称</div>
                         <div class="col col-price">单价</div>
@@ -58,9 +152,27 @@
                     <!-- 列表 -->
                     <div class="list-body" id="J_cartListBody">
                         <div class="item-box">
-                            <div class="item-table J_cartGoods" data-info="{ commodity_id:'1192300048', gettype:'buy', itemid:'2192300031_0_buy', num:'1'} ">
-
-                            </div>
+                           <table>
+                              <!-- <tr>
+                                <td class="checkbox">
+                                  <input class="check-one check" type="checkbox">
+                                </td>
+                                <td class="goods">
+                                  <img src="http://img12.360buyimg.com/n7/jfs/t1/4136/40/6201/250287/5ba1f333E745fc8b9/b34c5ccc4c4fd548.jpg" alt="">
+                                  <span>小米8青春版 镜面渐变AI双摄 6GB+64GB 深空灰 全网通4G</span>
+                                </td>
+                                <td class="price">1099.12</td>
+                                <td class="count">
+                                  <span class="reduce">-</span>
+                                  <input class="count-input" type="text" value="15">
+                                  <span class="add">+</span>
+                                </td>
+                                <td class="subtotal">16486.8</td>
+                                <td class="operation">
+                                  <span class="delete">✘</span>
+                                </td>
+                              </tr> -->
+                           </table>
                         </div>
                     </div>
                 </div>
@@ -173,6 +285,6 @@
 
 </body>
 
-
+<script src="js/cart1.js" ></script>
 
 </html>
