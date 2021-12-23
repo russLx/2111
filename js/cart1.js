@@ -69,7 +69,7 @@ class Cart {
         <img src="${ele.image}" alt="" />
         <span>${ele.name}</span>
       </td>
-      <td class="price">${ele.price}</td>
+      <td class="price">${ele.image}</td>
       <td class="count">
         <span class="reduce">-</span>
         <input class="count-input" type="text" value="${cg[ele.product_id]}" />

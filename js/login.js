@@ -3,7 +3,8 @@ let tel = document.querySelector('#username');
 let des = document.querySelector('.sp1');
 let pwd = document.querySelector('#pwd');
 let dess = document.querySelector('.sp2');
-console.log(tel,pwd);
+let btn = document.querySelector('#btn1');
+console.log(tel,pwd,btn);
 //手机号正则
 let telReg=/^1[3-9]\d{9}$/;
 //邮箱号正则
@@ -36,4 +37,10 @@ pwd.onblur=()=>{
         dess.innerHTML = '密码至少包含 数字和英文，长度6-20'
         dess.className = 'sy2'
     }
+}
+ // 给登录页面绑定点击事件
+btn.onclick=()=>{
+
+    location.href='./index.html';
+
 }
